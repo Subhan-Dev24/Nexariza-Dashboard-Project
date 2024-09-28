@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+   <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" width="device-width, intial-scale=1.0">
+  <title>Gridlayout</title> 
+  <style>
+    body{
+      background-color: lightblue;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+    display: inline-block;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .Dashboard {
+    display: block; /* Display the container as block to stack items vertically */
+}
+
+.item {
+    display: flex;
+    align-items: center; /* Align icon and heading horizontally in one line */
+    margin-bottom: 10%; /* Add space between each item */
+    margin-left: 19px;
+    font-size: x-large;
+}
+
+.item img {
+    margin-right: 10px; /* Add space between the icon and the text */
+}
+
+h4 {
+    margin: 0;
+}
+
+
+  .container { 
+     display: grid;
+     height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.9fr 0.9fr 1.3fr 2fr 2.8fr ;
+    grid-template-areas:
+      "nav nav nav nav nav"
+      "Dashboard Box1 Box2 Box3 Box4"
+      "Dashboard Box5 Box5 Box5 Box6"
+      "Dashboard Box5 Box5 Box5 Box6"
+      "Dashboard Box5 Box5 Box5 Box6"
+      "Dashboard Footer Footer Footer Footer"
+      "Dashboard Footer Footer Footer Footer";
+    grid-gap: 5px; 
+  } 
+  .nav { grid-area: nav; 
+background-color: #5f9ea0;
+}
+  .Dashboard { grid-area: Dashboard; 
+  background-color: rgb(183, 190, 196);
+  }
+  .Box1 { grid-area: Box1; 
+   background-color:burlywood;
+   text-align: center;
+   padding-top: 20px;
+  }  
+  .Box2 { grid-area: Box2; 
+   background-color:blanchedalmond;
+   text-align: center;
+   padding-top: 20px;
+  }
+  .Box3 { grid-area: Box3; 
+   background-color:rgb(178, 236, 217);
+   text-align: center;
+   padding-top: 20px;
+  }
+  .Box4 { grid-area: Box4; 
+    text-align: center;
+    font-size:x-large;
+    color: #28282B;
+    text-shadow: 2px 2px 2px #4682B4;
+    padding-top: 58px;
+    font-family: "Inter", sans-serif;
+    background:  linear-gradient(to right,rgb(52, 226, 188),rgb(221, 56, 139));
+  }
+  .Box5 { grid-area: Box5; 
+  }
+  .Box6 { grid-area: Box6; 
+} 
+  .Footer { grid-area: Footer;
+    background:linear-gradient(to left,rgb(161, 113, 216),rgb(228, 201, 51)) ;
+  }
+  @media only screen and (max-width:960px) {
+.container{
+grid-template-columns:1fr;
+grid-template-rows: 0.6fr 1.9fr 0.9fr 1.3fr 2fr 2.8fr 1.2fr 1.3fr 1.9fr;
+grid-template-areas:"nav"
+"Dashboard"
+"Box1"
+"Box2"
+"Box3"
+"Box4"
+"Box5"
+"Box6"
+"Footer";
+}}
+  </style>
+  </head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <nav> 
+                 <ul><li><img src="\Users\Best Tec\Pictures\VISUAL\fee superior\virtual Assistant\Signals.png" style="width:100px; height: 55px;"></li> 
+                    <li style="margin-left: 20px;padding-top: 15px;font-size: 22px;"><b>Admin</b> Logo </li>
+                 <li style="margin-left: 1000px;padding-top: 15px;"><img src="bell.svg" alt="bell"></li>
+                 <li style="margin-left: 20px;padding-top: 15px;font-size: 22px;">Subhan Hafeez</li>
+                 <li><img src="\Users\Best Tec\Pictures\VISUAL\fee superior\virtual Assistant\00.png" style="width: 49px;margin-left: 20px;height:49px;border-radius:50%;"></li>
+                 <li><img src="arrow.svg" style="width:40px;height:50px;margin-left: 20px;padding-top: 1px;"></li>
+        </ul>
+        </nav>
+          </div>
+          <div class="Dashboard">
+            <div class="item">
+                <img src="Dashboard.svg" alt="Dashboard">
+                <h4>Dashboard</h4>
+            </div>
+            <div class="item">
+                <img src="Task.svg" alt="Task">
+                <h4>Task</h4>
+            </div>
+            <div class="item">
+                <img src="User.svg" alt="User">
+                <h4>User</h4>
+            </div>
+            <div class="item">
+                <img src="Messages.svg" alt="Messages">
+                <h4>Messages</h4>
+            </div>
+            <div class="item">
+                <img src="Activities.svg" alt="Activities">
+                <h4>Activities</h4>
+            </div>
+            <div class="item">
+                <img src="calender.svg" alt="Calender">
+                <h4>Calender</h4>
+            </div>
+            <div class="item">
+                <img src="Post.svg" alt="Post">
+                <h4>Post</h4>
+            </div>
+            <div class="item">
+                <img src="ticket.svg" alt="Tickets">
+                <h4>Tickets</h4>
+            </div>
+            <div class="item">
+                <img src="Reports.svg" alt="Reports">
+                <h4>Reports</h4>
+            </div>
+            <div class="item">
+                <img src="Jobs.svg" alt="Jobs">
+                <h4>Jobs</h4>
+            </div>
+            <div class="item">
+                <img src="Documents.svg" alt="Documents">
+                <h4>Documents</h4>
+            </div>
+            <div class="item">
+                <img src="Pay.svg" alt="Payroll">
+                <h4>Payroll</h4>
+            </div>
+        </div>
+        
+        
+            <div class="Box1">
+            <img src="Box1.svg" alt="Box1">
+            <h2>1259</h2>
+            <p style="color: gray;">Total Employees</p>
+            </div>
+            <div class="Box2">
+              <img src="Briefcase.svg" alt="Briefcase">
+              <h2>23</h2>
+              <p style="color: gray;">Job Opening</p>
+            </div>
+            <div class="Box3">
+            <img src="new user.svg" alt="user">
+            <h2>123</h2>
+            <p style="color: gray;">New Applicant</p>
+            </div>
+            <div class="Box4">
+              <p>Upcoming Company Event</p>
+            </div>
+            <div class="Box5">
+              <img src="https://study.com/cimages/videopreview/what_is_a_line_graph_133237.jpg" width="861px" height="327px" alt="Graph">
+            </div>
+            <div class="Box6">
+              <img src="https://legion-legion-ui-images-public-stage.oss-ap-southeast-5.aliyuncs.com/legion/component/progresscircle/guideline-progress-circle-content-do.svg" alt="circular" width="393px" height="500px" style="padding-bottom:175px;">
+            </div>
+            <div class="Footer">
+              <h2 style="padding-bottom: 20px;padding-top: 10px;padding-left: 15px;">Invite to Office meet-up</h2>
+              <p style="color: gray;padding-left: 19px;">Due Date:<span style="color: black;font-size: large;    font-family: Inter, sans-serif";>Sep 25,2024</span></p>
+              <img src="https://i.pinimg.com/736x/e3/d2/b8/e3d2b8165a28f0f53a0b9dff912321c8.jpg" width="4.5%" height="26%" style="border-radius: 50%;float: left;margin-top: 10px;margin-left: 30px;" alt="">
+              <p  style="color: gray;float: left;padding-left: 10px;padding-top: 23px;">Maryam Nawaz</p>
+              <p  style="color: #000; font-size: 30px;margin-left:  800px;float: left; margin-top: 100px;">Call</p>
+              <img src="delete.svg" alt="delete" style="float: left; margin-top: 100px;">
+              <input type="button" value="Ended" style="background-color: red;float: left;color: aliceblue;width: 100px;height: 30px;border-radius:10% ;font-family:'Times New Roman', Times, serif;font-size:large; margin-top: 100px;">
+              <img src="pen.svg" alt="pen" style="float: left; margin-top: 100px;">
+            </div>
+          </div>
+    </body>
+</html>
